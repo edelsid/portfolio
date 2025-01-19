@@ -1,0 +1,18 @@
+footer {
+  padding-inline: 22vw 50px;
+  padding-block: 50px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.copyright {
+  align-self: end;
+}

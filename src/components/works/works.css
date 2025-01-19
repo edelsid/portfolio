@@ -1,0 +1,15 @@
+.work__list {
+  display: flex;
+  gap: 30px;
+  overflow: visible;
+}
+
+.work__item {
+  height: 400px;
+  aspect-ratio: 1.5 / 2;
+  background-color: lightgrey;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}

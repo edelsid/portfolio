@@ -1,1 +1,72 @@
 
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  margin-inline: 22vw 15vw;
+  margin-bottom: 200px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h1 {
+  margin-block: 0 18px;
+  font-size: 58px;
+}
+
+h2 {
+  margin-block: 0 30px;
+  font-size: 36px;
+}
+
+h3 {
+  margin-block: 0;
+  font-size: 20px;
+}
+
+h4 {
+  margin-block: 0 20px;
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.btn, .icon {
+  background-color: transparent;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 15px 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.icon {
+  border: 0;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  gap: 25px;
+}
