@@ -1,4 +1,4 @@
-export default function WorkList() {
+export default function WorkList({ setOpen }) {
   const expand = (e) => {
     const data = e.target.getBoundingClientRect();
     document.body.style.overflow = "hidden";
@@ -6,6 +6,7 @@ export default function WorkList() {
       translateY(-${data.y + 10}px)`;
     e.target.classList.remove("card_closed");
     e.target.classList.add("card_open");
+    setOpen(true);
   }
 
   return (

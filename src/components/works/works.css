@@ -23,12 +23,28 @@
 .card_open {
   width: 150vw;
   height: 150vh;
-  z-index: 999;
+  z-index: 900;
   border-radius: 0px;
 }
 
 .card_open > h3 {
   display: none;
+}
+
+.content {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px;
+  z-index: 999;
+  transition: 2s ease;
+}
+
+.content p, .content .btn {
+  color: black;
 }
 
 @media (hover: hover) {
