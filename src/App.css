@@ -16,6 +16,10 @@ body {
   background: linear-gradient(rgb(55, 58, 82) 0%, rgb(28, 31, 49) 100%);
 }
 
+#root {
+  overflow: hidden;
+}
+
 main {
   margin-inline: 25vw 15vw;
   padding-block: 50px 200px;

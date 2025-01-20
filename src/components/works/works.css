@@ -4,9 +4,10 @@
   overflow: visible;
 }
 
-.work__item {
+.card {
   height: 360px;
-  aspect-ratio: 1.5 / 2;
+  width: 300px;
+  flex-shrink: 0;
   background-color: lightgrey;
   padding: 30px;
   display: flex;
@@ -14,12 +15,24 @@
   justify-content: end;
   border-radius: 10px;
   cursor: pointer;
-  transition-duration: 0.5s;
-  transition-timing-function: ease;
+  transition: 0.5s ease;
+  will-change: transform, width, height;
+  z-index: 3;
+}
+
+.card_open {
+  width: 150vw;
+  height: 150vh;
+  z-index: 999;
+  border-radius: 0px;
+}
+
+.card_open > h3 {
+  display: none;
 }
 
 @media (hover: hover) {
-  .work__item:hover {
+  .card_closed:hover {
     transform: translateY(-10px);
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);;
   }
