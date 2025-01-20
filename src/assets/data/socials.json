@@ -1,0 +1,18 @@
+[{
+  "id": 1,
+  "link": "",
+  "title": "email",
+  "img": "src/assets/icons/email.svg"
+}, 
+{
+  "id": 2,
+  "link": "",
+  "title": "telegram",
+  "img": "src/assets/icons/telegram.svg"
+}, 
+{
+  "id": 3,
+  "link": "",
+  "title": "github",
+  "img": "src/assets/icons/github.svg"
+}]

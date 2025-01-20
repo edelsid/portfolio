@@ -1,23 +1,23 @@
-export default function Text() {
+import Socials from "../Socials"
+import data from "../../assets/data/socials.json" with { type: "json" };
+import "./character.css"
+
+export default function Character() {
   return (
-    <div className="header__text">
+    <section className="char">
       <div className="hello">
-        <p className="hello__msg">Привет</p>
+        <p className="hello__msg">привет</p>
         <h1 className="title title_site">Я Ксения</h1>
       </div>
-      <div className="header__desc">
-        <p className="desc__text">
+      <div className="char__desc">
+        <p className="char__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
           Ut enim ad minim veniam, quis nostrud exercitation ullamco 
           laboris nisi ut aliquip ex ea commodo consequat.
         </p>
-        <ul className="socials socials_header">
-          <li className="socials__item">icon</li>
-          <li className="socials__item">icon</li>
-          <li className="socials__item">icon</li>
-        </ul>
+        <Socials data={data}/>
       </div>
-    </div>
+    </section>
   )
 }

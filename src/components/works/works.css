@@ -5,11 +5,22 @@
 }
 
 .work__item {
-  height: 400px;
+  height: 360px;
   aspect-ratio: 1.5 / 2;
   background-color: lightgrey;
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: end;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+@media (hover: hover) {
+  .work__item:hover {
+    transform: translateY(-10px);
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);;
+  }
 }

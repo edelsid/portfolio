@@ -1,4 +1,5 @@
 import Header from './components/ui/header/Header'
+import Character from './components/character/Character'
 import Stack from './components/stack/Stack'
 import Works from './components/works/Works'
 import About from './components/about/About'
@@ -11,6 +12,7 @@ function App() {
     <>
       <Header />
       <main className="main">
+        <Character />
         <Stack />
         <Works />
         <About />

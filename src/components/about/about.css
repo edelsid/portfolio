@@ -1,4 +1,5 @@
 .about__content {
+  margin-top: 50px;
   display: flex;
   align-items: center;
   gap: 100px;
@@ -12,6 +13,7 @@
 }
 
 .about__text > p {
-  margin-bottom: 12px;
-  line-height: 1.2;
+  width: 80%;
+  margin-bottom: 20px;
+  line-height: 1.4;
 }

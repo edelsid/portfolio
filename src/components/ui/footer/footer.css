@@ -1,13 +1,13 @@
 footer {
-  padding-inline: 22vw 50px;
-  padding-block: 50px;
-  background-color: black;
+  padding-inline: 25vw 50px;
+  padding-block: 60px;
+  background-color: rgb(25, 22, 32);
   color: white;
   display: flex;
   justify-content: space-between;
 }
 
-.contacts {
+.contacts__content {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -15,4 +15,6 @@ footer {
 
 .copyright {
   align-self: end;
+  opacity: 0.3;
+  font-size: 14px;
 }

@@ -1,51 +1,14 @@
 header {
-  margin-block: 50px;
-  padding-inline: 22vw 50px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.header__text {
-  width: 70%;
-}
-
-.hello__msg {
-  margin-bottom: 10px;
-  font-size: 38px;
-  gap: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding-inline: 25vw 50px;
+  padding-top: 50px;
   display: flex;
   align-items: center;
-}
-
-.hello__msg::after {
-  content: "";
-  height: 2px;
-  width: 10%;
-  background-color: black;
-}
-
-.header__desc {
-  display: flex;
-  gap: 30px; 
-}
-
-.desc__text {
-  width: 60%;
-}
-
-.socials_header::before {
-  content: "";
-  height: 2px;
-  width: 70px;
-  background-color: black;
-}
-
-.header__util {
-  display: flex;
   justify-content: end;
-  align-items: center;
-  height: fit-content;
-  gap: 20px;
+  gap: 30px;
 }
 
 .icon_moon {
