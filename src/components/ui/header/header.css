@@ -9,6 +9,7 @@ header {
   align-items: center;
   justify-content: end;
   gap: 30px;
+  animation: appear 1s ease-in-out;
 }
 
 .icon_moon {

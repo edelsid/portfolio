@@ -4,11 +4,11 @@ export default function Content({ close }) {
   const contentWindow = useRef();
 
   useEffect(() => {
-    contentWindow.current.style.opacity = "1";
+    contentWindow.current.classList.add("content_visible");
   }, []);
 
   const handleClose = () => {
-    contentWindow.current.style.opacity = "0";
+    contentWindow.current.classList.remove("content_visible");
     close();
   }
 

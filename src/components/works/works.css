@@ -40,7 +40,11 @@
   height: 100vh;
   padding: 50px;
   z-index: 999;
-  transition: 2s ease;
+  transition: opacity 1s ease-in-out;
+}
+
+.content_visible {
+  opacity: 1;
 }
 
 .content p, .content .btn {
