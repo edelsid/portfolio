@@ -12,6 +12,14 @@ header {
   animation: appear 1s ease-in-out;
 }
 
-.icon_moon {
-  width: 30px;
+.theme {
+  padding: 0;
+}
+
+.icon_moon, .icon_sun{
+  display: block;
+  width: 40px;
+  height: 40px;
+  fill: var(--text-color);
+  transition: var(--transition);
 }

@@ -8,7 +8,7 @@
   height: 360px;
   width: 300px;
   flex-shrink: 0;
-  background-color: lightgrey;
+  background-color: white;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -17,6 +17,7 @@
   cursor: pointer;
   transition: 0.5s ease;
   will-change: transform, width, height;
+  transform: translateX(0px) translateY(0px);
   z-index: 3;
 }
 
@@ -48,7 +49,7 @@
 }
 
 .content p, .content .btn {
-  color: black;
+  color: rgb(32, 32, 32);
 }
 
 @media (hover: hover) {

@@ -10,7 +10,8 @@ export default function Works() {
     const openedWindow = document.querySelector(".card_open");
     openedWindow.classList.remove("card_open");
     openedWindow.classList.add("card_closed");
-    openedWindow.style.transform = `translateX(0px) translateY(0px)`;
+    openedWindow.style.transform = "";
+    document.body.style.overflow = "visible";
     setOpen(false);
   }
 

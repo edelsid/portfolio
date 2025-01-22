@@ -17,15 +17,10 @@
   align-items: center;
 }
 
-.hello__msg::after {
-  content: "";
-  height: 2px;
-  background-color: white;
-}
-
 .socials_header::before {
   content: "";
   height: 2px;
   width: 70px;
-  background-color: white;;
+  background-color: var(--text-color);
+  transition: var(--transition);
 }

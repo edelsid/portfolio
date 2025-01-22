@@ -5,15 +5,26 @@
   box-sizing: border-box;
   font-family: "Jost";
   font-size: 18px;
-  color: white;
+}
+
+:root {
+  --bg-gradient: linear-gradient(27deg, rgba(255,228,209) 0%, rgba(255,241,223) 82%);
+  --text-color: rgb(32, 32, 32);
+  --accent-color: rgb(224, 163, 83);
+  --transition: 0.3s ease-in-out;
+}
+
+.darkmode {
+  --bg-gradient: linear-gradient(rgb(55, 58, 82) 0%, rgb(28, 31, 49) 100%);
+  --text-color: white;
+  --accent-color: rgb(30, 32, 53);
 }
 
 body {
   margin: 0;
   position: relative;
   z-index: 1;
-  background: rgb(55, 58, 82);
-  background: linear-gradient(rgb(55, 58, 82) 0%, rgb(28, 31, 49) 100%);
+  background: var(--bg-gradient);
 }
 
 #root {
@@ -23,10 +34,12 @@ body {
 main {
   margin-inline: 25vw 15vw;
   padding-block: 50px 200px;
+  color: var(--text-color);
 }
 
 section {
   margin-bottom: 50px;
+  transition: var(--transition);
   animation: appear 1s ease-in-out;
 }
 
@@ -47,7 +60,7 @@ h2 {
 h3 {
   margin-block: 0;
   font-size: 20px;
-  color: black;
+  color: rgb(32, 32, 32);
 }
 
 h4 {
@@ -73,10 +86,12 @@ p {
 
 .btn {
   padding: 15px 30px;
-  border: 1px solid white;
+  border: 2px solid var(--text-color);
   border-radius: 10px;
   background-color: transparent;
   transition: background-color, 0.5s;
+  color: var(--text-color);
+  font-weight: 500;
 }
 
 .icon {
@@ -97,8 +112,14 @@ p {
 }
 
 .socials__icon {
+  position: relative;
   height: 100%;
   aspect-ratio: 1 / 1;
+  z-index: 1;
+  transition: var(--transition);
+}
+
+.darkmode .socials__icon, .socials_footer {
   filter: brightness(0) saturate(100%) invert(100%) sepia(93%) 
     saturate(0%) hue-rotate(185deg) brightness(106%) contrast(106%);
 }
@@ -112,9 +133,9 @@ p {
   margin: auto;
   border-radius: 50%;
   opacity: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition-duration: 0.5s;
-  transition-timing-function: ease;
+  background-color: var(--accent-color);
+  transition: 0.5s ease;
+  z-index: 0;
 }
 
 @keyframes appear {
@@ -128,10 +149,10 @@ p {
 
 @media (hover: hover) {
   .btn:hover {
-    background-color: rgb(30, 32, 53);
+    background-color: var(--accent-color);
   }
 
-  .socials__item:hover .socials__bg {
+  .socials_header .socials__item:hover .socials__bg {
     transform: scale(2);
     opacity: 1;
   }

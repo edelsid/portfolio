@@ -2,18 +2,16 @@
   margin-top: 50px;
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 50px;
 }
 
 .portrait {
-  width: 250px;
-  aspect-ratio: 1 / 1;
-  background-color: lightgrey;
-  border-radius: 50%;
+  width: 350px;
+  cursor: pointer;
 }
 
 .about__text > p {
-  width: 80%;
+  width: 90%;
   margin-bottom: 20px;
   line-height: 1.4;
 }
