@@ -11,7 +11,7 @@
   --bg-gradient: linear-gradient(27deg, rgba(255,228,209) 0%, rgba(255,241,223) 82%);
   --text-color: rgb(32, 32, 32);
   --accent-color: rgb(224, 163, 83);
-  --transition: 0.3s ease-in-out;
+  --transition: color 0.3s ease-in-out;
 }
 
 .darkmode {
@@ -61,6 +61,7 @@ h3 {
   margin-block: 0;
   font-size: 20px;
   color: rgb(32, 32, 32);
+  user-select: none;
 }
 
 h4 {

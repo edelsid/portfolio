@@ -1,3 +1,17 @@
+.stack {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.stack::before {
+  content: url(src/assets/images/gears.svg);
+  width: 90px;
+  position: absolute;
+  left: -130px;
+  z-index: 0;
+}
+
 .stack__list {
   display: flex;
   flex-wrap: wrap;

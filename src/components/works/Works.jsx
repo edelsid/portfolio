@@ -17,8 +17,10 @@ export default function Works() {
 
   return (
     <section className="works">
-      <h2 className="title title_section">Мои работы</h2>
-      <WorkList setOpen={setOpen}/>
+      <div className="works__wrapper">
+        <h2 className="title title_section">Мои работы</h2>
+        <WorkList setOpen={setOpen}/>
+      </div>
       {open && <Content close={close}/>}
     </section>
   )

@@ -1,13 +1,37 @@
+.works {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.works::before {
+  content: url(src/assets/images/pencil.svg);
+  width: 90px;
+  position: absolute;
+  left: -130px;
+  z-index: 0;
+}
+
 .work__list {
   display: flex;
   gap: 30px;
   overflow: visible;
 }
 
-.card {
+.card__wrapper {
+  position: relative;
   height: 360px;
   width: 300px;
+}
+
+.card {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   flex-shrink: 0;
+  height: 100%;
+  width: 100%;
   background-color: white;
   padding: 30px;
   display: flex;
@@ -16,16 +40,17 @@
   border-radius: 10px;
   cursor: pointer;
   transition: 0.5s ease;
-  will-change: transform, width, height;
   transform: translateX(0px) translateY(0px);
   z-index: 3;
+  position: absolute;
 }
 
 .card_open {
   width: 150vw;
   height: 150vh;
-  z-index: 900;
   border-radius: 0px;
+  position: absolute;
+  z-index: 900;
 }
 
 .card_open > h3 {
@@ -55,6 +80,6 @@
 @media (hover: hover) {
   .card_closed:hover {
     transform: translateY(-10px);
-    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
   }
 }

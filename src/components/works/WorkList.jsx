@@ -11,14 +11,20 @@ export default function WorkList({ setOpen }) {
 
   return (
     <ul className="work__list">
-      <li className="card card_closed" onClick={expand}>
-        <h3 className="title title_work">Работа 1</h3>
+      <li className="card__wrapper">
+        <div className="card card_closed" onClick={expand}>
+          <h3 className="title title_work">Работа 1</h3>
+        </div>
       </li>
-      <li className="card card_closed" onClick={expand}>
-        <h3 className="title title_work">Работа 2</h3>
+      <li className="card__wrapper">
+        <div className="card card_closed" onClick={expand}>
+          <h3 className="title title_work">Работа 2</h3>
+        </div>
       </li>
-      <li className="card card_closed" onClick={expand}>
-        <h3 className="title title_work">Работа 3</h3>
+      <li className="card__wrapper">
+        <div className="card card_closed" onClick={expand}>
+          <h3 className="title title_work">Работа 3</h3>
+        </div>
       </li>
     </ul>
   )
