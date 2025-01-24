@@ -79,6 +79,18 @@ p {
   margin: 0;
 }
 
+.title_section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title_section::before {
+  content: url(src/assets/images/star.svg);
+  width: 22px;
+  height: 22px;
+}
+
 .btn, .icon {
   background-color: transparent;
   height: fit-content;

@@ -24,15 +24,15 @@
 
 .title_site {
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 
-/* .title_site::after {
+.title_site::after {
   content: url(src/assets/images/sparkle.svg);
   width: 70px;
   transform: scale(1);
   transition: var(--transition);
-} */
+}
 
 .socials_header::before {
   content: "";

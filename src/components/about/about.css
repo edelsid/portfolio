@@ -3,15 +3,6 @@
   display: flex;
   align-items: center;
   gap: 50px;
-  position: relative;
-}
-
-.about__content::before {
-  content: url(src/assets/images/glass.svg);
-  width: 90px;
-  position: absolute;
-  left: -130px;
-  z-index: 0;
 }
 
 .portrait {

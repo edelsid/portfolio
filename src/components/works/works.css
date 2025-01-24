@@ -1,17 +1,3 @@
-.works__wrapper {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.works__wrapper::before {
-  content: url(src/assets/images/pencil.svg);
-  width: 90px;
-  position: absolute;
-  left: -130px;
-  z-index: 0;
-}
-
 .work__list {
   display: flex;
   gap: 30px;
