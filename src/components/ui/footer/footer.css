@@ -1,7 +1,7 @@
 footer {
   padding-inline: 25vw 50px;
   padding-block: 60px;
-  background-color: rgb(25, 22, 32);
+  background-color: var(--footer-color);
   color: white;
   display: flex;
   justify-content: space-between;

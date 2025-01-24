@@ -14,12 +14,36 @@ header {
 
 .theme {
   padding: 0;
+  transform-origin: center center;
+  position: relative;
 }
 
 .icon_moon, .icon_sun{
   display: block;
+  position: relative;
   width: 40px;
   height: 40px;
   fill: var(--text-color);
   transition: var(--transition);
+  z-index: 2;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (hover: hover) {
+  .theme:hover {
+    animation: spin 1.5s;
+  }
+
+  .theme:hover .highlight {
+    transform: scale(1.5);
+    opacity: 1;
+  }
 }

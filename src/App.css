@@ -11,6 +11,7 @@
   --bg-gradient: linear-gradient(27deg, rgba(255,228,209) 0%, rgba(255,241,223) 82%);
   --text-color: rgb(32, 32, 32);
   --accent-color: rgb(224, 163, 83);
+  --footer-color: rgb(54, 46, 48);
   --transition: color 0.3s ease-in-out;
 }
 
@@ -18,6 +19,7 @@
   --bg-gradient: linear-gradient(rgb(55, 58, 82) 0%, rgb(28, 31, 49) 100%);
   --text-color: white;
   --accent-color: rgb(30, 32, 53);
+  --footer-color: rgb(25, 22, 32);
 }
 
 body {
@@ -137,7 +139,7 @@ p {
     saturate(0%) hue-rotate(185deg) brightness(106%) contrast(106%);
 }
 
-.socials__bg {
+.highlight {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -165,7 +167,7 @@ p {
     background-color: var(--accent-color);
   }
 
-  .socials_header .socials__item:hover .socials__bg {
+  .socials_header .socials__item:hover .highlight {
     transform: scale(2);
     opacity: 1;
   }
