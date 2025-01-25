@@ -18,8 +18,11 @@ export default function header() {
 
   return (
     <header className="header">
-      <button className="btn cv-download">Скачать резюме</button>
-        <button className="icon theme">
+      <button className="btn cv-download">
+        <div className="cv__highlight"></div>
+        <p>Скачать резюме</p>
+      </button>
+      <button className="icon theme">
         <div className="highlight"></div>
         {isDark ? 
           <svg 

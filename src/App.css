@@ -12,6 +12,8 @@
   --text-color: rgb(32, 32, 32);
   --accent-color: rgb(224, 163, 83);
   --footer-color: rgb(54, 46, 48);
+  --btn-color: rgb(253, 224, 186);
+  --btn-bd-color: rgb(247, 208, 157);
   --transition: color 0.3s ease-in-out;
 }
 
@@ -20,6 +22,8 @@
   --text-color: white;
   --accent-color: rgb(30, 32, 53);
   --footer-color: rgb(25, 22, 32);
+  --btn-color: rgb(30, 32, 53);
+  --btn-bd-color: rgb(39, 41, 53);
 }
 
 body {
@@ -40,7 +44,7 @@ main {
 }
 
 section {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   transition: var(--transition);
   animation: appear 1s ease-in-out;
 }
@@ -101,7 +105,7 @@ p {
 
 .btn {
   padding: 15px 30px;
-  border: 2px solid var(--text-color);
+  border: 2.5px solid var(--text-color);
   border-radius: 10px;
   background-color: transparent;
   transition: background-color, 0.5s;
@@ -139,18 +143,21 @@ p {
     saturate(0%) hue-rotate(185deg) brightness(106%) contrast(106%);
 }
 
-.highlight {
+.highlight, .cv__highlight {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
-  border-radius: 50%;
   opacity: 0;
   background-color: var(--accent-color);
   transition: 0.5s ease;
   z-index: 0;
+}
+
+.highlight {
+  border-radius: 50%;
 }
 
 @keyframes appear {
@@ -163,10 +170,6 @@ p {
 }
 
 @media (hover: hover) {
-  .btn:hover {
-    background-color: var(--accent-color);
-  }
-
   .socials_header .socials__item:hover .highlight {
     transform: scale(2);
     opacity: 1;

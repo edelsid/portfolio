@@ -1,10 +1,18 @@
 export default function StackList() {
   return (
     <ul className="stack__list">
-      <li className="stack__item">HTML5</li>
-      <li className="stack__item">CSS</li>
-      <li className="stack__item">JavaScript</li>
-      <li className="stack__item">React</li>
+      <li className="stack__item">
+        <span className="stack__btn">HTML5</span>
+      </li>
+      <li className="stack__item">
+        <span className="stack__btn">CSS</span>
+      </li>
+      <li className="stack__item">
+        <span className="stack__btn">JavaScript</span>
+      </li>
+      <li className="stack__item">
+        <span className="stack__btn">React</span>
+      </li>
     </ul>
   )
 }

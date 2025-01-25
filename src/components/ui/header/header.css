@@ -28,6 +28,19 @@ header {
   z-index: 2;
 }
 
+.cv__highlight {
+  border-radius: 10px;
+}
+
+.cv-download {
+  position: relative;
+}
+
+.cv-download > p {
+  position: relative;
+  z-index: 3;
+}
+
 @keyframes spin {
   from {
     transform: rotate(0);
@@ -42,8 +55,16 @@ header {
     animation: spin 1.5s;
   }
 
+  .theme:hover .highlight, 
+  .cv-download:hover .cv__highlight {
+    opacity: 1;
+  }
+
   .theme:hover .highlight {
     transform: scale(1.5);
-    opacity: 1;
+  }
+
+  .cv-download:hover .cv__highlight {
+    transform: scaleX(1.1) scaleY(1.3);
   }
 }
