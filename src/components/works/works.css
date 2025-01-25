@@ -1,3 +1,7 @@
+.works > .title_section::before {
+  content: "📁";
+}
+
 .work__list {
   display: flex;
   gap: 30px;

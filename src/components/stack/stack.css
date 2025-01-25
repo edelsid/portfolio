@@ -1,7 +1,11 @@
+.stack > .title_section::before {
+  content: "💡";
+}
+
 .stack__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 25px;
 }
 
 .stack__item {

@@ -1,3 +1,7 @@
+.about > .title_section::before {
+  content: "😇";
+}
+
 .about__content {
   margin-top: 50px;
   display: flex;

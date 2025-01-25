@@ -88,13 +88,13 @@ p {
 .title_section {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .title_section::before {
-  content: url(src/assets/images/star.svg);
-  width: 22px;
-  height: 22px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1;
 }
 
 .btn, .icon {
