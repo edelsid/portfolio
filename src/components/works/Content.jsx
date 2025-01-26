@@ -14,7 +14,7 @@ export default function Content({ close }) {
 
   return (
     <div className="content" ref={contentWindow}>
-      <button className="btn" onClick={handleClose}>Закрыть</button>
+      <button className="btn btn_content" onClick={handleClose}>Закрыть</button>
       <p>Content</p>
     </div>
   )

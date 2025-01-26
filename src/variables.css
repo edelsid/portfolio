@@ -1,0 +1,18 @@
+:root {
+  --bg-gradient: linear-gradient(27deg, rgba(255,228,209) 0%, rgba(255,241,223) 82%);
+  --text-color: rgb(32, 32, 32);
+  --accent-color: rgb(224, 163, 83);
+  --footer-color: rgb(54, 46, 48);
+  --btn-color: rgb(253, 224, 186);
+  --btn-bd-color: rgb(247, 208, 157);
+  --transition: color 0.3s ease-in-out;
+}
+
+.darkmode {
+  --bg-gradient: linear-gradient(rgb(55, 58, 82) 0%, rgb(28, 31, 49) 100%);
+  --text-color: white;
+  --accent-color: rgb(30, 32, 53);
+  --footer-color: rgb(25, 22, 32);
+  --btn-color: rgb(30, 32, 53);
+  --btn-bd-color: rgb(39, 41, 53);
+}

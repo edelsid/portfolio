@@ -1,29 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+@import './variables.css';
 
 *, *::after, *::before {
   box-sizing: border-box;
   font-family: "Jost";
-  font-size: 18px;
-}
-
-:root {
-  --bg-gradient: linear-gradient(27deg, rgba(255,228,209) 0%, rgba(255,241,223) 82%);
-  --text-color: rgb(32, 32, 32);
-  --accent-color: rgb(224, 163, 83);
-  --footer-color: rgb(54, 46, 48);
-  --btn-color: rgb(253, 224, 186);
-  --btn-bd-color: rgb(247, 208, 157);
-  --transition: color 0.3s ease-in-out;
-}
-
-.darkmode {
-  --bg-gradient: linear-gradient(rgb(55, 58, 82) 0%, rgb(28, 31, 49) 100%);
-  --text-color: white;
-  --accent-color: rgb(30, 32, 53);
-  --footer-color: rgb(25, 22, 32);
-  --btn-color: rgb(30, 32, 53);
-  --btn-bd-color: rgb(39, 41, 53);
 }
 
 body {
@@ -38,8 +19,6 @@ body {
 }
 
 main {
-  margin-inline: 25vw 15vw;
-  padding-block: 50px 200px;
   color: var(--text-color);
 }
 
@@ -55,12 +34,10 @@ h1, h2, h3, h4 {
 
 h1 {
   margin-block: 0 18px;
-  font-size: 58px;
 }
 
 h2 {
   margin-block: 0 20px;
-  font-size: 34px;
 }
 
 h3 {
@@ -104,7 +81,6 @@ p {
 }
 
 .btn {
-  padding: 15px 30px;
   border: 2.5px solid var(--text-color);
   border-radius: 10px;
   background-color: transparent;
@@ -173,5 +149,51 @@ p {
   .socials_header .socials__item:hover .highlight {
     transform: scale(2);
     opacity: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  *, *::after, *::before {
+    font-size: 18px;
+  }
+
+  main {
+    margin-inline: 25vw 15vw;
+    padding-block: 50px 200px;
+  }
+
+  h1 {
+    font-size: 58px;
+  }
+  
+  h2 {
+    font-size: 34px;
+  }
+
+  .btn {
+    padding: 15px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  *, *::after, *::before {
+    font-size: 16px;
+  }
+
+  main {
+    margin-inline: 5vw;
+    padding-block: 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+
+  .btn {
+    padding: 10px 20px;
   }
 }

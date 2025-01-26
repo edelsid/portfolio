@@ -3,19 +3,47 @@
 }
 
 .about__content {
-  margin-top: 50px;
+  
   display: flex;
-  align-items: center;
   gap: 50px;
 }
 
 .portrait {
-  width: 350px;
   cursor: pointer;
 }
 
 .about__text > p {
-  width: 90%;
   margin-bottom: 20px;
   line-height: 1.4;
+}
+
+@media (min-width: 1200px) {
+  .about__content {
+    margin-top: 50px;
+    align-items: center;
+  }
+
+  .portrait {
+    width: 350px;
+  }
+
+  .about__text > p {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about__content {
+    margin-top: 25px;
+    flex-direction: column;
+  }
+
+  .portrait {
+    width: 100%;
+  }
+
+  .about__text > p {
+    width: 100%;
+    text-align: center;
+  }
 }
