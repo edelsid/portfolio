@@ -73,7 +73,26 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 721px) and (max-width: 1200px) {
+  .title_site {
+    gap: 15px;
+  }
+
+  .title_site::after {
+    width: 55px;
+  }
+
+  .char__desc {
+    display: flex;
+    gap: 30px;
+  }
+
+  .char__text {
+    width: 60%;
+  }
+}
+
+@media (max-width: 720px) {
   .title_site {
     gap: 12px;
   }

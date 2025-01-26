@@ -24,7 +24,14 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 721px) and (max-width: 1200px) {
+  footer {
+    padding-inline: 7vw;
+    padding-block: 30px;
+  }
+}
+
+@media (max-width: 720px) {
   footer {
     padding-inline: 5vw;
     padding-block: 25px;

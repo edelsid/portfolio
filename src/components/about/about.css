@@ -3,8 +3,8 @@
 }
 
 .about__content {
-  
   display: flex;
+  align-items: center;
   gap: 50px;
 }
 
@@ -32,18 +32,35 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 721px) and (max-width: 1200px) {
+  .about__content {
+    flex-direction: row;
+    margin-top: 50px;
+  }
+
+  .portrait {
+    width: 40%;
+  }
+}
+
+@media (max-width: 720px) {
   .about__content {
     margin-top: 25px;
     flex-direction: column;
   }
 
   .portrait {
-    width: 100%;
+    width: 50%;
   }
 
   .about__text > p {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .portrait {
+    width: 80%;
   }
 }

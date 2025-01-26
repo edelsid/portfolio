@@ -175,7 +175,30 @@ p {
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 721px) and (max-width: 1200px) {
+  *, *::after, *::before {
+    font-size: 18px;
+  }
+
+  main {
+    margin-inline: 7vw;
+    padding-block: 100px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+  
+  h2 {
+    font-size: 34px;
+  }
+
+  .btn {
+    padding: 10px 25px;
+  }
+}
+
+@media (max-width: 720px) {
   *, *::after, *::before {
     font-size: 16px;
   }
