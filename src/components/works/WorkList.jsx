@@ -4,8 +4,10 @@ export default function WorkList({ data, openCard }) {
     document.body.style.overflow = "hidden";
     e.target.style.transform = `translateX(-${data.x + 10}px)
       translateY(-${data.y + 10}px)`;
-    e.target.classList.remove("card_closed");
-    e.target.classList.add("card_open");
+    setTimeout(() => {
+      e.target.classList.remove("card_closed");
+      e.target.classList.add("card_open");
+    }, 300);
     openCard(e.target);
   }
 

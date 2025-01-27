@@ -5,7 +5,9 @@ export default function Content({ content, closeCard }) {
   const { title, text, repo, link, deploy, screenshots, stack } = content;
 
   useEffect(() => {
-    contentWindow.current.classList.add("content_visible");
+    setTimeout(() => {
+      contentWindow.current.classList.add("content_visible");
+    }, 300);
   }, []);
 
   const handleClose = () => {
