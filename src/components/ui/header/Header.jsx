@@ -18,7 +18,7 @@ export default function header() {
 
   return (
     <header className="header">
-      <button className="btn cv-download">
+      <button className="btn btn_standart btn_cv-download">
         <div className="cv__highlight"></div>
         <p>Скачать резюме</p>
       </button>

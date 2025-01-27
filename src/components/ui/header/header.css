@@ -29,11 +29,11 @@ header {
   border-radius: 10px;
 }
 
-.cv-download {
+.btn_cv-download {
   position: relative;
 }
 
-.cv-download > p {
+.btn_cv-download > p {
   position: relative;
   z-index: 3;
 }
@@ -53,7 +53,7 @@ header {
   }
 
   .theme:hover .highlight, 
-  .cv-download:hover .cv__highlight {
+  .btn_cv-download:hover .cv__highlight {
     opacity: 1;
   }
 
@@ -61,7 +61,7 @@ header {
     transform: scale(1.5);
   }
 
-  .cv-download:hover .cv__highlight {
+  .btn_cv-download:hover .cv__highlight {
     transform: scaleX(1.1) scaleY(1.3);
   }
 }

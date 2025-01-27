@@ -1,31 +1,29 @@
-export default function WorkList({ setOpen }) {
+export default function WorkList({ data, openCard }) {
   const expand = (e) => {
     const data = e.target.getBoundingClientRect();
     document.body.style.overflow = "hidden";
-    e.target.style.transform = `translateX(-${data.x}px)
+    e.target.style.transform = `translateX(-${data.x + 10}px)
       translateY(-${data.y + 10}px)`;
     e.target.classList.remove("card_closed");
     e.target.classList.add("card_open");
-    setOpen(true);
+    openCard(e.target);
   }
 
   return (
     <ul className="work__list">
-      <li className="card__wrapper">
-        <div className="card card_closed" onClick={expand}>
-          <h3 className="title title_work">Работа 1</h3>
+      {data.map((item) => 
+      <li className="card__wrapper" key={item.id}>
+        <div 
+          className="card card_closed" 
+          onClick={expand} 
+          id={item.id}
+          style={{
+            backgroundImage: `url(${item.thumbnail})`, 
+            backgroundColor: `${item.color}`
+          }}>
+          <h3 className="title title_work">{item.title}</h3>
         </div>
-      </li>
-      <li className="card__wrapper">
-        <div className="card card_closed" onClick={expand}>
-          <h3 className="title title_work">Работа 2</h3>
-        </div>
-      </li>
-      <li className="card__wrapper">
-        <div className="card card_closed" onClick={expand}>
-          <h3 className="title title_work">Работа 3</h3>
-        </div>
-      </li>
+      </li>)}
     </ul>
   )
 }

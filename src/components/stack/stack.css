@@ -8,17 +8,19 @@
   gap: 25px;
 }
 
+.stack__item, .stack__inner {
+  border-radius: 10px;
+}
+
 .stack__item {
   padding: 3px;
   background-color: var(--btn-color);
-  border-radius: 10px;
   cursor: pointer;
   font-weight: 500;
 }
 
-.stack__btn {
+.stack__inner {
   display: block;
   padding: 7px 17px;
   border: 2px solid var(--btn-bd-color);
-  border-radius: 10px;
 }

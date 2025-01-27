@@ -81,12 +81,14 @@ p {
 }
 
 .btn {
-  border: 2.5px solid var(--text-color);
-  border-radius: 10px;
-  background-color: transparent;
   transition: background-color, 0.5s;
-  color: var(--text-color);
   font-weight: 500;
+}
+
+.btn_standart {
+  border-radius: 10px;
+  color: var(--text-color);
+  border: 2.5px solid var(--text-color);
 }
 
 .icon {
@@ -170,7 +172,7 @@ p {
     font-size: 34px;
   }
 
-  .btn {
+  .btn_standart {
     padding: 15px 30px;
   }
 }
@@ -193,7 +195,7 @@ p {
     font-size: 34px;
   }
 
-  .btn {
+  .btn_standart {
     padding: 10px 25px;
   }
 }
@@ -216,7 +218,7 @@ p {
     font-size: 30px;
   }
 
-  .btn {
+  .btn_standart {
     padding: 10px 20px;
   }
 }

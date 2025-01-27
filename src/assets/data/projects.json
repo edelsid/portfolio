@@ -1,0 +1,45 @@
+[{
+  "id": 1,
+  "title": "work1",
+  "deploy": "link1",
+  "color": "white",
+  "stack": ["React", "CSS", "JavaScript", "React Router", "Redux Toolkit", "Vite"],
+  "screenshots": [
+    "src/assets/screenshots/grey.png", 
+    "src/assets/screenshots/skyblue.png",
+    "src/assets/screenshots/purple.png"
+  ],
+  "thumbnail": "src/assets/screenshots/grey.png",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+},
+{
+  "id": 2,
+  "title": "work2",
+  "repo": "link1",
+  "deploy": "link2",
+  "additional": "link3",
+  "color": "lightgrey",
+  "stack": ["HTML5", "SCSS", "JavaScript", "Vite"],
+  "screenshots": [
+    "src/assets/screenshots/green.png", 
+    "src/assets/screenshots/mint.png",
+    "src/assets/screenshots/dgreen.png"
+  ],
+  "thumbnail": "src/assets/screenshots/mint.png",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+},
+{
+  "id": 3,
+  "title": "work3",
+  "repo": "link1",
+  "deploy": "link2",
+  "color": "lightblue",
+  "stack": ["React", "CSS", "Next.JS", "Redux Toolkit", "Vite"],
+  "screenshots": [
+    "src/assets/screenshots/red.png", 
+    "src/assets/screenshots/burgundy.png",
+    "src/assets/screenshots/orange.png"
+  ],
+  "thumbnail": "src/assets/screenshots/orange.png",
+  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+}]
