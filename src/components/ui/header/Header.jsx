@@ -9,11 +9,20 @@ export default function header() {
   }
 
   useEffect(() => {
+    if (!localStorage.getItem('dark')) {
+      setIsDark(false);
+      document.body.classList.remove("darkmode");
+    }
+  }, []);
+
+  useEffect(() => {
     if (isDark) {
       document.body.classList.add("darkmode");
+      localStorage.setItem("dark", true);
       return;
     }
     document.body.classList.remove("darkmode");
+    localStorage.removeItem("dark");
   }, [isDark]);
 
   return (
