@@ -6,6 +6,7 @@
   --btn-color: rgb(253, 224, 186);
   --btn-bd-color: rgb(247, 208, 157);
   --transition: color 0.3s ease-in-out;
+  --auto-text-color: rgb(32, 32, 32);
 }
 
 .darkmode {
