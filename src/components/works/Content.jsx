@@ -12,7 +12,6 @@ export default function Content({ content, closeCard }) {
   useEffect(() => {
     const timer = setInterval(() => {
       setActive((prevState) => {return prevState + 1});
-      console.log(active)
     }, 6000);
     setTimeout(() => {
       contentWindow.current.classList.add("content_visible");
@@ -33,6 +32,15 @@ export default function Content({ content, closeCard }) {
 
   return (
     <div className="content__wrapper" ref={contentWindow}>
+      <ul className="content__slider" ref={sliderWindow}>
+        {screenshots.map((item) => 
+          <Slide 
+            img={item} 
+            id={screenshots.indexOf(item)}
+            key={screenshots.indexOf(item)}
+            active={active}
+          />)}
+      </ul>
       <button className="btn btn_content" onClick={handleClose}>&#10006;</button>
       <div className="content">
         <div className="content__main">
@@ -43,15 +51,6 @@ export default function Content({ content, closeCard }) {
           <Tech stack={stack}/>
           <Links links={links}/>
         </div>
-        <ul className="content__slider" ref={sliderWindow}>
-          {screenshots.map((item) => 
-            <Slide 
-              img={item} 
-              id={screenshots.indexOf(item)}
-              key={screenshots.indexOf(item)}
-              active={active}
-            />)}
-        </ul>
       </div>
     </div>
   )

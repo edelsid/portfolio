@@ -37,8 +37,8 @@
 }
 
 .card_open {
-  width: 150vw;
-  height: 150vh;
+  width: calc(var(--doc-width) + 10px);
+  height: calc(var(--doc-height) + 10px);
   border-radius: 0px;
   position: absolute;
   background-size: 0 0;
@@ -56,8 +56,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 150px;
   z-index: 999;
+  overflow-y: scroll;
   transition: opacity 1s ease-in-out;
   color: var(--auto-text-color);
 }
@@ -79,16 +79,12 @@
 
 .content {
   margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
   width: 100%;
 }
 
 .content__main {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  width: 50%;
 }
 
 .content__slider {
@@ -114,16 +110,17 @@
 .content__showcase {
   object-fit: cover;
   object-position: center;
-  mask-image: linear-gradient(90deg, transparent 10%, rgba(255, 255, 255, 0.3) 70%);
 }
 
 .content__links-wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .content__stack ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -136,6 +133,9 @@
   padding: 5px 10px;
   border-radius: 10px;
   cursor: default;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .content_visible {
@@ -162,6 +162,34 @@
     height: 360px;
     width: 300px;
   }
+
+  .content__wrapper {
+    padding: 150px;
+  }
+
+  .content__main {
+    gap: 40px;
+    width: 50%;
+  }
+
+  .content__slider {
+    width: 45%;
+  }
+
+  .content__showcase {
+    mask-image: linear-gradient(90deg, transparent 10%, rgba(255, 255, 255, 0.35) 70%);
+  }
+}
+
+@media (max-width: 1200px) {
+  .content__main {
+    gap: 40px;
+    width: 100%;
+  }
+
+  .content__showcase {
+    mask-image: radial-gradient(ellipse at right top, rgba(255, 255, 255, 0.2) 50%, transparent 70%);
+  }
 }
 
 @media (min-width: 721px) and (max-width: 1200px) {
@@ -172,6 +200,14 @@
   .card__wrapper {
     width: 33%;
   }
+
+  .content__wrapper {
+    padding: 100px;
+  }
+
+  .content__slider {
+    width: 50%;
+  }
 }
 
 @media (max-width: 720px) {
@@ -181,5 +217,13 @@
 
   .card__wrapper {
     width: 100%;
+  }
+
+  .content__wrapper {
+    padding: 30px;
+  }
+
+  .content__slider {
+    width: 70%;
   }
 }
