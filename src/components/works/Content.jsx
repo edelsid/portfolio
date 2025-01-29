@@ -8,6 +8,7 @@ export default function Content({ content, closeCard }) {
   const [ active, setActive ] = useState(0);
   const contentWindow = useRef();
   const sliderWindow = useRef();
+  const insideSpace = useRef();
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -30,6 +31,28 @@ export default function Content({ content, closeCard }) {
     closeCard();
   }
 
+  useEffect(() => {
+    let timeout;
+    const handleResize = () => {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        calculateHeight();
+      }, 300);
+    }
+    window.addEventListener("resize", handleResize);
+    calculateHeight();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const calculateHeight = () => {
+    const windowHeight = window.innerHeight;
+    const style = window.getComputedStyle(contentWindow.current);
+    const padding = parseInt(style.getPropertyValue('padding'));
+    const newHeight = insideSpace.current.clientHeight + (2 * padding) + 90;
+    const finalHeight = newHeight > windowHeight ? newHeight : windowHeight;
+    sliderWindow.current.style.setProperty("height", `${finalHeight}px`);
+  }
+
   return (
     <div className="content__wrapper" ref={contentWindow}>
       <ul className="content__slider" ref={sliderWindow}>
@@ -42,7 +65,7 @@ export default function Content({ content, closeCard }) {
           />)}
       </ul>
       <button className="btn btn_content" onClick={handleClose}>&#10006;</button>
-      <div className="content">
+      <div className="content" ref={insideSpace}>
         <div className="content__main">
           <div className="content__text">
             <h2 className="title title_content">{title}</h2>

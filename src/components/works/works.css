@@ -30,6 +30,7 @@
   cursor: pointer;
   transition: 0.5s ease;
   transform: translateX(0px) translateY(0px);
+  transform-origin: left;
   z-index: 3;
   background-repeat: no-repeat;
   background-position: center;
@@ -37,10 +38,9 @@
 }
 
 .card_open {
-  width: calc(var(--doc-width) + 10px);
-  height: calc(var(--doc-height) + 10px);
+  width: 200vw;
+  height: 210vh;
   border-radius: 0px;
-  position: absolute;
   background-size: 0 0;
   z-index: 900;
 }
@@ -89,6 +89,7 @@
 
 .content__slider {
   position: absolute;
+  transition: 0.5s ease-in-out;
   width: 45%;
   height: 100%;
   top: 0;
