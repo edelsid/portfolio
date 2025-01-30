@@ -1,4 +1,4 @@
-import data from "../../assets/data/projects.json" with { type: "json" };
+import data from "../../assets/data/projects";
 import { useState } from "react"
 import Content from "./Content"
 import WorkList from "./WorkList"

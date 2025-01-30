@@ -1,18 +1,24 @@
-[{
+import email from "../icons/email.svg"
+import telegram from "../icons/telegram.svg"
+import github from "../icons/github.svg"
+
+const socials = [{
   "id": 1,
   "link": "mailto:eradonna@yandex.ru",
   "title": "email",
-  "img": "src/assets/icons/email.svg"
+  "img": email,
 }, 
 {
   "id": 2,
   "link": "https://telegram.me/argainel",
   "title": "telegram",
-  "img": "src/assets/icons/telegram.svg"
+  "img": telegram,
 }, 
 {
   "id": 3,
   "link": "https://github.com/edelsid",
   "title": "github",
-  "img": "src/assets/icons/github.svg"
-}]
+  "img": github,
+}];
+
+export default socials;

@@ -1,5 +1,5 @@
 import Socials from "../Socials"
-import data from "../../assets/data/socials.json" with { type: "json" };
+import socials from "../../assets/data/socials";
 import "./character.css"
 
 export default function Character() {
@@ -20,7 +20,7 @@ export default function Character() {
             но всегда непротив расширить свой кругозор.
           </p>
         </div>
-        <Socials data={data}/>
+        <Socials data={socials}/>
       </div>
     </section>
   )

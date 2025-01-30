@@ -1,5 +1,7 @@
+import portrait from "../../assets/images/char.svg"
+
 export default function Portrait() {
   return (
-    <img className="portrait" src="src/assets/images/char.svg" />
+    <img className="portrait" src={portrait} />
   )
 }
