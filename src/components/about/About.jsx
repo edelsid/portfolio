@@ -9,20 +9,19 @@ export default function About() {
         <Portrait />
         <div className="about__text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-            laboris nisi ut aliquip ex ea commodo consequat.
+            Я пришла в разработку из креативных сфер, поэтому неудивительно, 
+            что мое внимание привлек именно фронтенд! Из своей прошлой деятельности 
+            я несу в новую навыки работы в Adobe Photoshop, Corel Draw, Figma, 
+            немного Adobe Illustrator, и, надеюсь, определенное чувство вкуса :) 
           </p>
           <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse 
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-            anim id est laborum.
+            Помимо этих инструментов я также хорошо владею английским языком, 
+            в свободное время периодически что-то рисую или перевожу.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Хотите видеть все, что есть выше, в одном лаконичном документе? 
+            Тогда я приглашаю вас <a className="cv-link" href="">скачать мое резюме</a>. 
+            Буду рада наладить с вами контакт и получить обратную связь!
           </p>
         </div>
       </div>

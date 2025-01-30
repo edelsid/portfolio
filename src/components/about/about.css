@@ -17,6 +17,12 @@
   line-height: 1.4;
 }
 
+.cv-link {
+  font-weight: 600;
+  text-decoration: underline;
+  color: var(--text-color);
+}
+
 @media (min-width: 1200px) {
   .about__content {
     margin-top: 50px;

@@ -35,7 +35,7 @@ export default function WorkList({ data, openCard }) {
       {data.map((item) => 
       <li className="card__wrapper" key={item.id}>
         <div 
-          className="card card_closed" 
+          className={`card card_closed ${item.dark ? "dark" : "light"}`}
           onClick={expand} 
           id={item.id}
           style={{

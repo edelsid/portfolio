@@ -10,12 +10,16 @@ export default function Character() {
         <h1 className="title title_site">Я Ксения</h1>
       </div>
       <div className="char__desc">
-        <p className="char__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-          laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+        <div className="char__text">
+          <p>
+            Фронтенд-разработчик.
+          </p>
+          <p>
+            Пишу код с 2023 года. Мне интересны как креативные проекты, 
+            так и практичные деловые утилиты. На данный момент специализируюсь на Реакте, 
+            но всегда непротив расширить свой кругозор.<br/>Рада познакомиться!
+          </p>
+        </div>
         <Socials data={data}/>
       </div>
     </section>

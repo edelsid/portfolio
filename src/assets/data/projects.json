@@ -1,13 +1,14 @@
 [{
   "id": 1,
-  "title": "work1",
+  "title": "Портфолио художника",
+  "dark": true,
   "links": [
     {
       "name": "Посетить сайт",
       "link": "link2"
     }
   ],
-  "color": "white",
+  "color": "#222129",
   "stack": ["React", "CSS", "JavaScript", "React Router", "Redux Toolkit", "Vite"],
   "screenshots": [
     "src/assets/images/art2.png", 
@@ -15,11 +16,12 @@
     "src/assets/images/art2-2.png"
   ],
   "thumbnail": "",
-  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  "text": "Этот проект я делала для иллюстратора, рисующего красочные работы на заказ. На сайте можно посмотреть обширную галерею уже созданных изображений, узнать все условия обслуживания, а также, конечно, выйти на контакт с художником.\nУ сайта есть своя панель администратора, созданная при помощи Headless Wordpress. Хостится все это на своем VPS-сервере. Со всеми этими технологиями на момент разработки я столкнулась впервые, так что пришлось много в чем разбираться! Но я рада финальному результату, а особенно его визуальной составляющей, над которой я трудилась по дизайнам заказчика."
 },
 {
   "id": 2,
-  "title": "work2",
+  "title": "Лендинг строительной компании",
+  "dark": false,
   "links": [
     {
       "name": "Посетить сайт",
@@ -34,18 +36,19 @@
       "link": "link1"
     }
   ],
-  "color": "lightgrey",
+  "color": "#fff",
   "stack": ["HTML5", "SCSS", "JavaScript", "Vite"],
   "screenshots": [
     "src/assets/images/conbuild2.png", 
     "src/assets/images/conbuild2-1.png"
   ],
   "thumbnail": "",
-  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  "text": "Продающая страница для выдуманной организации. Изначально разрабатывалась в команде на благотворительном хакатоне для фронтендеров. Для меня это была отличная практика верстки, а также прекрасная возможность изучить SCSS и поупражняться в создании слайдеров на чистом JavaScript. После окончания ивента уже лично мной было принято решение доработать проект, поправить его недочеты и сделать для него адаптив.\nВсе внедренные изменения описаны в README проекта."
 },
 {
   "id": 3,
-  "title": "work3",
+  "title": "Канбан-доска",
+  "dark": false,
   "links": [
     {
       "name": "Посетить сайт",
@@ -63,5 +66,5 @@
     "src/assets/images/canban-1.png"
   ],
   "thumbnail": "",
-  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  "text": "Проект был создан в рамках ивента \"Прими вызов\" от Хабр Карьеры и онлайн-школы Хекслет. Это финальное упражнение с трека фронтендеров: канбан-доска в стиле Трелло, но с ограниченным функционалом. По задумке ивента все задания должны были походить на реальные тестовые задачи, которые работодатели могли бы предложить соискателям.\nОсновные требования были такими:\n - Разработать простую доску с тремя колонками и постами,\n - Реализовать drag-and-drop,\n - Реализовать возможность добавлять новые посты колонку \"В работе\".\n Все пункты были выполнены за 1 день."
 }]

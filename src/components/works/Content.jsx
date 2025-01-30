@@ -4,13 +4,15 @@ import Tech from "./Tech";
 import Slide from "./Slide";
 
 export default function Content({ content, closeCard }) {
-  const { title, text, links, stack, screenshots } = content;
+  const [ paragraphs, setParagraphs ] = useState([]);
+  const { title, text, links, stack, screenshots, dark } = content;
   const [ active, setActive ] = useState(0);
   const contentWindow = useRef();
   const sliderWindow = useRef();
   const insideSpace = useRef();
 
   useEffect(() => {
+    setParagraphs(text.split("\n"));
     const timer = setInterval(() => {
       setActive((prevState) => {return prevState + 1});
     }, 6000);
@@ -54,7 +56,9 @@ export default function Content({ content, closeCard }) {
   }
 
   return (
-    <div className="content__wrapper" ref={contentWindow}>
+    <div 
+      className={`content__wrapper ${dark ? "dark" : "light"}`} 
+      ref={contentWindow}>
       <ul className="content__slider" ref={sliderWindow}>
         {screenshots.map((item) => 
           <Slide 
@@ -69,7 +73,9 @@ export default function Content({ content, closeCard }) {
         <div className="content__main">
           <div className="content__text">
             <h2 className="title title_content">{title}</h2>
-            <p className="content__desc">{text}</p>
+            <div className="content__desc">
+              {paragraphs.map((item) => <p key={Math.random()}>{item}</p>)}
+            </div>
           </div>
           <Tech stack={stack}/>
           <Links links={links}/>
