@@ -25,15 +25,15 @@
   "links": [
     {
       "name": "Посетить сайт",
-      "link": "link2"
+      "link": "https://team8html-event2024-nine.vercel.app"
     },
     {
       "name": "Версия с хакатона",
-      "link": "link3"
+      "link": "https://team8html-event2024.vercel.app"
     },
     {
       "name": "Посмотреть код",
-      "link": "link1"
+      "link": "https://github.com/edelsid/team8htmlEvent2024"
     }
   ],
   "color": "#fff",
@@ -52,11 +52,11 @@
   "links": [
     {
       "name": "Посетить сайт",
-      "link": "link2"
+      "link": "https://edelsid.github.io/hexlet-canban/"
     },
     {
       "name": "Посмотреть код",
-      "link": "link1"
+      "link": "https://github.com/edelsid/hexlet-canban"
     }
   ],
   "color": "lightblue",
