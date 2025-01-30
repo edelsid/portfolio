@@ -1,12 +1,12 @@
 [{
   "id": 1,
-  "link": "",
+  "link": "mailto:eradonna@yandex.ru",
   "title": "email",
   "img": "src/assets/icons/email.svg"
 }, 
 {
   "id": 2,
-  "link": "",
+  "link": "https://telegram.me/argainel",
   "title": "telegram",
   "img": "src/assets/icons/telegram.svg"
 }, 
