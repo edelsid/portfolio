@@ -21,9 +21,11 @@ export default function Works() {
   const closeCard = () => {
     const openedWindow = document.querySelector(".card_open");
     openedWindow.classList.remove("card_open");
-    openedWindow.classList.add("card_closed");
+    setTimeout(() => {
+      openedWindow.classList.add("card_closed"); 
+    }, 300);
     openedWindow.style.transform = "";
-    document.body.style.overflow = "visible";
+    document.body.style.overflow = "visible";   
     setContent(null);
     setOpen(false);
   }

@@ -41,14 +41,21 @@
   z-index: 3;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 0 0;
+  opacity: 0;
 }
 
 .title_work {
   color: var(--content-color);
 }
 
+.card_closed {
+  background-size: cover;
+  opacity: 1;
+}
+
 .card_open {
+  opacity: 1;
   width: 200vw;
   height: 210vh;
   border-radius: 0px;
