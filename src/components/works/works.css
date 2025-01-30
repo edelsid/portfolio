@@ -73,7 +73,7 @@
   color: var(--content-color);
 }
 
-.content__wrapper::before {
+/* .content__wrapper::before {
   content: "";
   background-image: url(src/assets/images/noise.png);
   position: absolute;
@@ -81,7 +81,7 @@
   opacity: 0.1;
   z-index: 998;
   background-repeat: repeat;
-}
+} */
 
 .btn_content, .btn_work {
   position: relative;

@@ -3,13 +3,19 @@ import Links from "./Links";
 import Tech from "./Tech";
 import Slide from "./Slide";
 
-export default function Content({ content, closeCard }) {
+export default function Content({ content, closeCard, error }) {
   const [ paragraphs, setParagraphs ] = useState([]);
-  const { title, text, links, stack, screenshots, dark } = content;
   const [ active, setActive ] = useState(0);
   const contentWindow = useRef();
   const sliderWindow = useRef();
   const insideSpace = useRef();
+
+  let  title, text, links, stack, screenshots, dark;
+  try {
+    ({ title, text, links, stack, screenshots, dark } = content); 
+  } catch (error) {
+    return;
+  }
 
   useEffect(() => {
     setParagraphs(text.split("\n"));
@@ -17,6 +23,7 @@ export default function Content({ content, closeCard }) {
       setActive((prevState) => {return prevState + 1});
     }, 6000);
     setTimeout(() => {
+      calculateHeight();
       contentWindow.current.classList.add("content_visible");
     }, 300);
     return () => clearInterval(timer);
@@ -42,22 +49,26 @@ export default function Content({ content, closeCard }) {
       }, 300);
     }
     window.addEventListener("resize", handleResize);
-    calculateHeight();
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const calculateHeight = () => {
-    const windowHeight = window.innerHeight;
-    const style = window.getComputedStyle(contentWindow.current);
-    const padding = parseInt(style.getPropertyValue('padding'));
-    const newHeight = insideSpace.current.clientHeight + (2 * padding) + 90;
-    const finalHeight = newHeight > windowHeight ? newHeight : windowHeight;
-    sliderWindow.current.style.setProperty("height", `${finalHeight}px`);
+    try {
+      const windowHeight = window.innerHeight;
+      const style = window.getComputedStyle(contentWindow.current);
+      const padding = parseInt(style.getPropertyValue('padding'));
+      const newHeight = insideSpace.current.clientHeight + (2 * padding) + 90;
+      const finalHeight = newHeight > windowHeight ? newHeight : windowHeight;
+      sliderWindow.current.style.setProperty("height", `${finalHeight}px`);
+    } catch (error) {
+      return;
+    }
   }
 
   return (
     <div 
-      className={`content__wrapper ${dark ? "dark" : "light"}`} 
+      className={`content__wrapper ${dark ? "dark" : "light"}`}
+      style={error ? {backgroundColor: "lightgrey"} : {}} 
       ref={contentWindow}>
       <ul className="content__slider" ref={sliderWindow}>
         {screenshots.map((item) => 
@@ -77,7 +88,7 @@ export default function Content({ content, closeCard }) {
               {paragraphs.map((item) => <p key={Math.random()}>{item}</p>)}
             </div>
           </div>
-          <Tech stack={stack}/>
+          {!error ? <Tech stack={stack}/> : <></>}
           <Links links={links}/>
         </div>
       </div>
