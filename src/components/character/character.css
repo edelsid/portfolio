@@ -11,10 +11,15 @@
   gap: 20px;
   display: flex;
   align-items: center;
+  animation: appear 1s;
 }
 
 .title_site {
   display: flex;
+}
+
+.char__desc {
+  animation: var(--animation-appear);
 }
 
 .char__desc p:not(:last-child) {
@@ -22,9 +27,14 @@
 }
 
 .title_site::after {
-  content: url(src/assets/images/sparkle.svg);
+  content: url("/sparkle.svg");
   transform: scale(1);
   transition: var(--transition);
+}
+
+.socials_header {
+  align-items: center;
+  gap: 25px;
 }
 
 .socials_header::before {

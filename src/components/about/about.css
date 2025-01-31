@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   gap: 50px;
+  animation: var(--animation-appear)
 }
 
 .portrait {

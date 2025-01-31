@@ -3,10 +3,11 @@
   --text-color: rgb(32, 32, 32);
   --accent-color: rgb(224, 163, 83);
   --footer-color: rgb(54, 46, 48);
-  --btn-color: rgb(253, 224, 186);
-  --btn-bd-color: rgb(247, 208, 157);
+  --btn-color: rgba(255, 210, 150, 0.5);
+  --btn-bd-color: rgba(240, 197, 140, 0.3);
   --transition: color 0.3s ease-in-out;
   --auto-text-color: rgb(32, 32, 32);
+  --animation-appear: appear 1.5s;
 }
 
 .darkmode {
@@ -14,6 +15,6 @@
   --text-color: white;
   --accent-color: rgb(30, 32, 53);
   --footer-color: rgb(25, 22, 32);
-  --btn-color: rgb(30, 32, 53);
-  --btn-bd-color: rgb(39, 41, 53);
+  --btn-color: rgba(35, 37, 58, 0.5);
+  --btn-bd-color: rgba(27, 28, 37, 0.3);
 }

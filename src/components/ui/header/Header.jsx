@@ -27,10 +27,10 @@ export default function header() {
 
   return (
     <header className="header">
-      <button className="btn btn_standart cv-download btn_themed">
+      <a className="btn btn_standart cv-download btn_themed" href="download/file.pdf" download>
         <div className="cv__highlight"></div>
         <p>Скачать резюме</p>
-      </button>
+      </a>
       <button className="icon theme">
         <div className="highlight"></div>
         {isDark ? 

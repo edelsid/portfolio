@@ -6,6 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  animation: appear 1.3s;
 }
 
 .stack__item, .stack__inner {

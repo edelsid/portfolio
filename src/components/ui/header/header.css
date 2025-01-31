@@ -6,7 +6,7 @@ header {
   gap: 30px;
   top: 0;
   right: 0;
-  animation: appear 1s ease-in-out;
+  animation: var(--animation-appear);
 }
 
 .theme {

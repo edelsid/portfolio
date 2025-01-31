@@ -5,16 +5,30 @@ footer {
   justify-content: space-between;
 }
 
-.contacts__content {
+.socials_footer {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
+  animation: var(--animation-appear);
+}
+
+.socials_footer a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.socials_footer .socials__icon {
+  width: 24px;
+  height: 24px;
 }
 
 .copyright {
   align-self: end;
   opacity: 0.3;
   font-size: 14px;
+  animation: var(--animation-appear);
 }
 
 @media (min-width: 1200px) {
@@ -40,8 +54,14 @@ footer {
     gap: 30px;
   }
 
-  .contacts__content {
+  .contacts {
+    width: 100%;
+    text-align: center;
+  }
+
+  .socials_footer {
     align-items: center;
+    text-align: center;
   }
 
   .copyright {

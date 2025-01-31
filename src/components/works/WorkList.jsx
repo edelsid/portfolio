@@ -40,9 +40,10 @@ export default function WorkList({ data, openCard }) {
           id={item.id}
           style={{
             backgroundImage: `url(${item.thumbnail})`, 
-            backgroundColor: `${item.color}`
+            backgroundColor: `${item.color}`,
+            animation: `jump ${0.5 * (data.indexOf(item) + 1)}s ease-in-out`
           }}>
-          <h3 className="title title_work">{item.title}</h3>
+          <h3 className="title title_work" style={{animation: "none"}}>{item.title}</h3>
         </div>
       </li>)}
     </ul>

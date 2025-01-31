@@ -1,24 +1,14 @@
 export default function StackList() {
+  const stack = ["HTML5", "CSS3", "SCSS/SASS", "JavaScript", "React", "Redux Toolkit"];
+
   return (
     <ul className="stack__list">
+      {stack.map((item) => 
       <li className="stack__item">
-        <span className="stack__inner">HTML5</span>
-      </li>
-      <li className="stack__item">
-        <span className="stack__inner">CSS3</span>
-      </li>
-      <li className="stack__item">
-        <span className="stack__inner">SCSS/SASS</span>
-      </li>
-      <li className="stack__item">
-        <span className="stack__inner">JavaScript</span>
-      </li>
-      <li className="stack__item">
-        <span className="stack__inner">React</span>
-      </li>
-      <li className="stack__item">
-        <span className="stack__inner">Redux Toolkit</span>
-      </li>
+        <span className="stack__inner">
+          {item}
+        </span>
+      </li>)}
     </ul>
   )
 }
