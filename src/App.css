@@ -152,6 +152,14 @@ a {
   border: none;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+
+.scroll-up__arrow {
+  width: 40%;
 }
 
 @keyframes jump {

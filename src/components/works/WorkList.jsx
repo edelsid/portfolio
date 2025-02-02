@@ -19,14 +19,10 @@ export default function WorkList({ data, openCard }) {
   }
 
   useEffect(() => {
+    setHeight();
     let timeout;
-    try {
-      const size = document.body.getBoundingClientRect();
-      document.documentElement.style.setProperty("--height", `${size.height}px`);
-    } catch (error) {
-      document.documentElement.style.setProperty("--height", `200vh`);
-    }
     const handleResize = () => {
+      setHeight();
       clearTimeout(timeout);
       timeout = setTimeout(() => {
         if (!cardRef.current) return;
@@ -38,6 +34,15 @@ export default function WorkList({ data, openCard }) {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const setHeight = () => {
+    try {
+      const size = document.body.getBoundingClientRect();
+      document.documentElement.style.setProperty("--height", `${size.height}px`);
+    } catch (error) {
+      document.documentElement.style.setProperty("--height", `200vh`);
+    }
+  }
 
   return (
     <ul className="work__list">
