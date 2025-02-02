@@ -16,7 +16,7 @@
 .stack__item {
   padding: 3px;
   background-color: var(--btn-color);
-  cursor: pointer;
+  cursor: default;
   font-weight: 500;
 }
 

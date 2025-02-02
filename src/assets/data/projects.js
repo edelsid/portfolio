@@ -5,10 +5,11 @@ import conbuild from "../images/conbuild2.png"
 import conbuild2 from "../images/conbuild2-1.png"
 import conbuild3 from "../images/conbuild2-2.png"
 import conbuild4 from "../images/conbuild2-3.png"
-import canban from "../images/canban.png"
-import canban2 from "../images/canban-2.png"
+import filters from "../images/filters.png"
+import filters2 from "../images/filters-2.png"
 import art_thumbnail from "../images/card_art.png"
 import conbuild_thumbnail from "../images/card_conbuild.png"
+import filters_thumbnail from "../images/card_filters.png"
 
 const projects = [{
   "id": 1,
@@ -61,26 +62,26 @@ const projects = [{
 },
 {
   "id": 3,
-  "title": "Канбан-доска",
+  "title": "Фильтрация отзывов",
   "dark": false,
   "links": [
     {
       "name": "Посетить сайт",
-      "link": "https://edelsid.github.io/hexlet-canban/"
+      "link": "https://github.com/edelsid/hexlet-filters"
     },
     {
       "name": "Посмотреть код",
-      "link": "https://github.com/edelsid/hexlet-canban"
+      "link": "https://edelsid.github.io/hexlet-filters/"
     }
   ],
-  "color": "lightblue",
-  "stack": ["React", "CSS", "Next.JS", "Redux Toolkit", "Vite"],
+  "color": "#fff0e7",
+  "stack": ["React", "CSS", "Redux Saga", "Vite"],
   "screenshots": [
-    canban, 
-    canban2
+    filters, 
+    filters2
   ],
-  "thumbnail": "",
-  "text": "Проект был создан в рамках ивента \"Прими вызов\" от Хабр Карьеры и онлайн-школы Хекслет. Это финальное упражнение с трека фронтендеров: канбан-доска в стиле Трелло, но с ограниченным функционалом. По задумке ивента все задания должны были походить на реальные тестовые задачи, которые работодатели могли бы предложить соискателям.\nОсновные требования были такими:\n - Разработать простую доску с тремя колонками и постами,\n - Реализовать drag-and-drop,\n - Реализовать возможность добавлять новые посты колонку \"В работе\".\n Все пункты были выполнены за 1 день."
+  "thumbnail": filters_thumbnail,
+  "text": "Проект был создан в рамках ивента \"Прими вызов\" от Хабр Карьеры и онлайн-школы Хекслет. Это второе упражнение с трека фронтендеров: система фильтрации отзывов о гипотетической услуге. По задумке ивента все задания должны были походить на реальные тестовые задачи, которые работодатели могли бы предложить соискателям.\nОсновные требования были такими:\n - Загрузить список отзывов через redux-saga,\n - Реализовать фильтрацию отзывов по платформе и диапазону оценок,\n - Реализовать сортировку отзывов по времени и оценке."
 }];
 
 export default projects;

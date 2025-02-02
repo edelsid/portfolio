@@ -57,7 +57,7 @@
 .card_open {
   opacity: 1;
   width: 200vw;
-  height: 210vh;
+  height: calc(var(--height) * 2);
   border-radius: 0px;
   background-size: 0 0;
   z-index: 900;

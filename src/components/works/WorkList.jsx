@@ -4,20 +4,26 @@ export default function WorkList({ data, openCard }) {
   const cardRef = useRef();
 
   const expand = (e) => {
-    e.target.style.transform = "translateX(-50%) translateY(-50%)";
-    cardRef.current = e.target;
+    let el = e.target;
+    if (e.target.classList.contains("title_work")) {
+      el = e.target.parentElement;
+    };
+    el.style.transform = "translateX(-50%) translateY(-50%)";
+    cardRef.current = el;
     document.body.style.overflow = "hidden";
     setTimeout(() => {
-      e.target.classList.remove("card_closed");
-      e.target.classList.add("card_open");
+      el.classList.remove("card_closed");
+      el.classList.add("card_open");
       
     }, 300);
-    openCard(e.target);
+    openCard(el);
   }
 
   useEffect(() => {
     let timeout;
     const handleResize = () => {
+      const size = document.body.getBoundingClientRect();
+      document.documentElement.style.setProperty("--height", `${size.height}px`);
       clearTimeout(timeout);
       timeout = setTimeout(() => {
         if (!cardRef.current) return;
