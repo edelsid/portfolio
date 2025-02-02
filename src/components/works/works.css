@@ -134,6 +134,7 @@
 .content__showcase img {
   display: block;
   object-fit: cover;
+  pointer-events: none;
 }
 
 .slider__item {
@@ -144,6 +145,7 @@
 .content__showcase {
   object-fit: cover;
   object-position: center;
+  pointer-events: none;
 }
 
 .content__links-wrapper {

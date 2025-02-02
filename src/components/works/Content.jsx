@@ -18,7 +18,8 @@ export default function Content({ content, closeCard, error }) {
   }
 
   useEffect(() => {
-    setParagraphs(text.split("\n"));
+    const parsedTest = text.replaceAll("&nbsp;", "\u00A0");
+    setParagraphs(parsedTest.split("\n"));
     const timer = setInterval(() => {
       setActive((prevState) => {return prevState + 1});
     }, 6000);

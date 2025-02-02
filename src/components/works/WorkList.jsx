@@ -48,7 +48,9 @@ export default function WorkList({ data, openCard }) {
           onClick={expand} 
           id={item.id}
           style={{
-            backgroundImage: `url(${item.thumbnail})`, 
+            backgroundImage: `image-set(
+              url(${item.thumbnail.webp}) type("image/webp"), 
+              url(${item.thumbnail.png}) type("image/png"))`,
             backgroundColor: `${item.color}`,
             animation: `jump ${0.5 * (data.indexOf(item) + 1)}s ease-in-out`
           }}>

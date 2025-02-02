@@ -10,10 +10,11 @@
 }
 
 .portrait {
-  cursor: pointer;
+  cursor: default;
+  pointer-events: none;
 }
 
-.about__text > p {
+.about__text > p:not(:last-child) {
   margin-bottom: 20px;
   line-height: 1.4;
 }
