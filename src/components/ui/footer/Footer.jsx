@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <Contacts />
-      <p className="copyright">© 2025 — All rights reserved.</p>
+      <p className="copyright">© 2025</p>
     </footer>
   )
 }

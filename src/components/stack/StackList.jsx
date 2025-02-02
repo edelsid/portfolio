@@ -1,5 +1,5 @@
 export default function StackList() {
-  const stack = ["HTML5", "CSS3", "SCSS/SASS", "JavaScript", "React", "Redux Toolkit"];
+  const stack = ["HTML5", "CSS3", "SCSS/SASS", "JavaScript", "React", "Redux Toolkit", "Vite"];
 
   return (
     <ul className="stack__list">
