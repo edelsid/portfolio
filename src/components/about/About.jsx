@@ -20,7 +20,7 @@ export default function About() {
           </p>
           <p>
             Хотите видеть все, что есть выше, в одном лаконичном документе? 
-            Тогда я приглашаю вас <a className="cv-link" href="download/file.pdf" download>скачать мое резюме</a>. 
+            Тогда я приглашаю вас <a className="cv-link" href="download/cha.xenia_resume.pdf" download>скачать мое резюме</a>. 
             Буду рада наладить с вами контакт и получить обратную связь!
           </p>
         </div>

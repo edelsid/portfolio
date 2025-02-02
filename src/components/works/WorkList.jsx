@@ -14,16 +14,19 @@ export default function WorkList({ data, openCard }) {
     setTimeout(() => {
       el.classList.remove("card_closed");
       el.classList.add("card_open");
-      
     }, 300);
     openCard(el);
   }
 
   useEffect(() => {
     let timeout;
-    const handleResize = () => {
+    try {
       const size = document.body.getBoundingClientRect();
       document.documentElement.style.setProperty("--height", `${size.height}px`);
+    } catch (error) {
+      document.documentElement.style.setProperty("--height", `200vh`);
+    }
+    const handleResize = () => {
       clearTimeout(timeout);
       timeout = setTimeout(() => {
         if (!cardRef.current) return;

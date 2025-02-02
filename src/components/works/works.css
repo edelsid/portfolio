@@ -75,7 +75,7 @@
   width: 100vw;
   height: 100vh;
   z-index: 998;
-  overflow-y: scroll;
+  overflow-y: auto;
   transition: opacity 1s ease-in-out;
   color: var(--content-color);
 }
@@ -122,10 +122,18 @@
   right: 0;
 }
 
-.slider__item, .content__showcase {
-  position: absolute;
+.slider__item, .content__showcase, .content__showcase img {
   width: 100%;
   height: 100%;
+}
+
+.slider__item, .content__showcase {
+  position: absolute;
+}
+
+.content__showcase img {
+  display: block;
+  object-fit: cover;
 }
 
 .slider__item {

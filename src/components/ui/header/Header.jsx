@@ -27,7 +27,10 @@ export default function header() {
 
   return (
     <header className="header">
-      <a className="btn btn_standart cv-download btn_themed" href="download/file.pdf" download>
+      <a 
+        className="btn btn_standart cv-download btn_themed" 
+        href="download/cha.xenia_resume.pdf" 
+        download>
         <div className="cv__highlight"></div>
         <p>Скачать резюме</p>
       </a>
