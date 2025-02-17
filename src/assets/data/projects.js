@@ -28,6 +28,12 @@ import RaM1 from "../images/RaM1.png"
 import RaM1_webp from "../images/RaM1.webp"
 import RaM2 from "../images/RaM2.png"
 import RaM2_webp from "../images/RaM2.webp"
+import card_mntn from "../images/card_mntn.png"
+import card_mntn_webp from "../images/card_mntn.webp"
+import mntn1 from "../images/mntn.png"
+import mntn1_webp from "../images/mntn.webp"
+import mntn2 from "../images/mntn2.png"
+import mntn2_webp from "../images/mntn2.webp"
 
 const projects = [{
   "id": 1,
@@ -140,6 +146,41 @@ const projects = [{
   "text": "Этот простой сервис был сделан на&nbsp;основе The&nbsp;Rick and Morty API, и&nbsp;с&nbsp;его помощью можно искать персонажей этого мультсериала по&nbsp;имени. Результаты отображаются в&nbsp;виде списка карточек с&nbsp;минимальной информацией: полное имя, статус, дата добавления в&nbsp;базу данных. Поисковая строка принимает только английский язык и&nbsp;цифры. "
 }, {
   "id": 4,
+  "title": "Сайт-путеводитель по хайкингу",
+  "dark": true,
+  "links": [
+    {
+      "name": "Посетить сайт",
+      "link": "https://edelsid.github.io/mntn/"
+    },
+    {
+      "name": "Посмотреть код",
+      "link": "https://github.com/edelsid/mntn"
+    }, 
+    {
+      "name": "Макет",
+      "link": "https://verstaem.online/projects/mntn/"
+    }
+  ],
+  "color": "#0b1d26",
+  "stack": ["HTML5", "SCSS", "JavaScript", "Webpack"],
+  "screenshots": [
+    {
+      "png": mntn1,
+      "webp": mntn1_webp,
+    }, 
+    {
+      "png": mntn2,
+      "webp": mntn2_webp,
+    }
+  ],
+  "thumbnail": {
+    "png": card_mntn,
+    "webp": card_mntn_webp,
+  },
+  "text": "Этот небольшой артистичный сайт, посвященный хайкингу, разрабатывался для&nbsp;практики чистой HTML-верстки, адаптивного дизайна. В&nbsp;процессе я&nbsp;также познакомилась с&nbsp;параллакс-эффектами, инструментом intersection observer, сборщиком модулей Webpack. Макет сайта был взят с&nbsp;сайта Верстаем.онлайн."
+}, {
+  "id": 5,
   "title": "Фильтрация отзывов",
   "dark": false,
   "links": [
