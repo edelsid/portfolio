@@ -57,7 +57,7 @@ export default function WorkList({ data, openCard }) {
               url(${item.thumbnail.webp}) type("image/webp"), 
               url(${item.thumbnail.png}) type("image/png"))`,
             backgroundColor: `${item.color}`,
-            animation: `jump ${0.5 * (data.indexOf(item) + 1)}s ease-in-out`
+            animation: `jump ${0.3 * (data.indexOf(item) + 1)}s ease-in-out`
           }}>
           <h3 className="title title_work" style={{animation: "none"}}>{item.title}</h3>
         </div>
